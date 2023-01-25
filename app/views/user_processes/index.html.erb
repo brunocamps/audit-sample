@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>User processes</h1>
+
+<div id="user_processes">
+  <% @user_processes.each do |user_process| %>
+    <%= render user_process %>
+    <p>
+      <%= link_to "Show this user process", user_process %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New user process", new_user_process_path %>

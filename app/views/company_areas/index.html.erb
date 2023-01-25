@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Company areas</h1>
+
+<div id="company_areas">
+  <% @company_areas.each do |company_area| %>
+    <%= render company_area %>
+    <p>
+      <%= link_to "Show this company area", company_area %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New company area", new_company_area_path %>
